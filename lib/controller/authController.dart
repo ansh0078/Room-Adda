@@ -2,6 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:roomadda/model/userModel.dart';
+import 'package:roomadda/pages/auth/authPage.dart';
+import 'package:roomadda/widgets/bottonNav.dart';
 
 class AuthController extends GetxController {
   final auth = FirebaseAuth.instance;
@@ -15,7 +17,8 @@ class AuthController extends GetxController {
         email: email,
         password: password,
       );
-      Get.offAllNamed("/bottomNav");
+      Get.to(() => BottomNav());
+      print("login");
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         print('No user found for that email.');
@@ -37,7 +40,7 @@ class AuthController extends GetxController {
       );
       await initUser(email, name);
       print("Account Created...");
-      Get.to("/bottomNav");
+      Get.to(() => BottomNav());
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
         print('The password provided is too weak.');
@@ -52,7 +55,7 @@ class AuthController extends GetxController {
 
   Future<void> logoutUser() async {
     await auth.signOut();
-    Get.offAllNamed("/authPage");
+    Get.to(AuthPage);
   }
 
   Future<void> initUser(String email, String name) async {

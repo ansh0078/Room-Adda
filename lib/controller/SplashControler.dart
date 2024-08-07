@@ -1,6 +1,8 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
+import 'package:roomadda/pages/auth/authPage.dart';
+import 'package:roomadda/widgets/bottonNav.dart';
 
 class SplashController extends GetxController {
   final auth = FirebaseAuth.instance;
@@ -15,9 +17,9 @@ class SplashController extends GetxController {
       const Duration(seconds: 5),
     );
     if (auth.currentUser == null) {
-      Get.offAllNamed("/authPage");
+      Get.to(AuthPage());
     } else {
-      Get.offAllNamed("/bottomNav");
+      Get.to(BottomNav());
     }
   }
 }

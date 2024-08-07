@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:roomadda/config/images.dart';
 
-class RoomCard extends StatelessWidget {
-  const RoomCard({super.key});
+class RoomCard1 extends StatelessWidget {
+  const RoomCard1({super.key});
 
   @override
   Widget build(BuildContext context) {

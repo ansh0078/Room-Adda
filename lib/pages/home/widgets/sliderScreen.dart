@@ -14,15 +14,15 @@ class _SliderScreenState extends State<SliderScreen> {
   List imageList = [
     {
       "id": 1,
-      "image_path": 'assets/image/img.png'
+      "image_path": 'assets/images/img.png'
     },
     {
       "id": 2,
-      "image_path": 'assets/image/img_1.png'
+      "image_path": 'assets/images/img_1.png'
     },
     {
       "id": 3,
-      "image_path": 'assets/image/img_2.png'
+      "image_path": 'assets/images/img_2.png'
     }
   ];
   final CarouselController carouselController = CarouselController();
@@ -35,7 +35,7 @@ class _SliderScreenState extends State<SliderScreen> {
         Stack(
           children: [
             Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: InkWell(
                 splashColor: Colors.transparent,
                 highlightColor: Colors.transparent,

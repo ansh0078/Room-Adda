@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
       title: 'Room Adda',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(brightness: Brightness.light),
-      getPages: pagePath,
       home: const SplashScreen(),
     );
   }

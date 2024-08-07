@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:roomadda/config/string.dart';
-import 'package:roomadda/pages/booking/widgets/roomCard.dart';
+import 'package:roomadda/pages/room/widgets/roomCard.dart';
 import 'package:roomadda/pages/room/widgets/roomDescription.dart';
 import 'package:roomadda/widgets/dropDownBtn.dart';
 
@@ -76,11 +75,17 @@ class _RoomPageState extends State<RoomPage> {
                 ),
                 itemCount: 4,
                 itemBuilder: (context, index) {
-                  return InkWell(
-                    onTap: (){Get.to(const RoomDescriptionPage());},
-                    child: const RoomCard());
+                  return RoomCard(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const RoomDescriptionPage()),
+                      );
+                    },
+                  );
                 }),
           ),
+          const SizedBox(height: 20),
         ],
       ),
     );
