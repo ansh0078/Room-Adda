@@ -1,4 +1,6 @@
 
+import 'package:flutter/material.dart';
+import 'package:roomadda/config/images.dart';
 
 class RoomCard extends StatefulWidget {
   final Function onTap;
@@ -45,7 +47,7 @@ class _RoomCardState extends State<RoomCard> {
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
                         fit: BoxFit.cover,
-                        image: AssetImage(AssetsIamge.room),
+                        image: AssetImage(AssetsImage.room),
                       ),
                     ),
                   ),

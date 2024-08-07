@@ -1,6 +1,10 @@
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:roomadda/pages/booking/booking.dart';
+import 'package:roomadda/pages/chat/chatPage.dart';
+import 'package:roomadda/pages/home/homePage.dart';
+import 'package:roomadda/pages/profile/profile.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -16,15 +20,15 @@ class _BottomNavState extends State<BottomNav> {
   late Widget currentPage;
   late HomePage homePage;
   late MyBooking myBooking;
-  late MessagePage messagePage;
+  late ChatPage messagePage;
   late ProfilePage profilePage;
 
   @override
   void initState() {
-    homePage = HomePage();
-    messagePage = MessagePage();
-    myBooking = MyBooking();
-    profilePage = ProfilePage();
+    homePage = const HomePage();
+    messagePage = const ChatPage();
+    myBooking = const MyBooking();
+    profilePage = const ProfilePage();
     pages = [homePage, messagePage, myBooking, profilePage];
     super.initState();
   }

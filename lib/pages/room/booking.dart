@@ -1,4 +1,7 @@
 
+import 'package:flutter/material.dart';
+import 'package:roomadda/config/string.dart';
+import 'package:roomadda/widgets/primaryBtn.dart';
 
 class RoomBooking extends StatelessWidget {
   const RoomBooking({super.key});

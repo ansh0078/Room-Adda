@@ -1,4 +1,10 @@
 
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:roomadda/config/images.dart';
+import 'package:roomadda/pages/room/booking.dart';
+import 'package:roomadda/widgets/primaryBtn.dart';
+
 class RoomDescriptionPage extends StatelessWidget {
   const RoomDescriptionPage({super.key});
 
@@ -7,7 +13,7 @@ class RoomDescriptionPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         // padding: EdgeInsets.only(bottom: 10),
-        margin: EdgeInsets.only(bottom: 10),
+        margin: const EdgeInsets.only(bottom: 10),
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
@@ -18,7 +24,7 @@ class RoomDescriptionPage extends StatelessWidget {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: AssetImage(AssetsIamge.room),
+                      image: AssetImage(AssetsImage.room),
                     ),
                   )),
               Container(
@@ -86,7 +92,7 @@ class RoomDescriptionPage extends StatelessWidget {
                   btnName: "Book Now",
                   icon: Icons.book_online,
                   ontap: () {
-                    Get.to(RoomBooking());
+                    Get.to(const RoomBooking());
                   })
             ],
           ),
