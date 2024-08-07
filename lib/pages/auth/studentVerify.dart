@@ -1,4 +1,8 @@
 
+import 'package:flutter/material.dart';
+import 'package:roomadda/pages/auth/widgets/authBody.dart';
+import 'package:roomadda/widgets/dropDownBtn.dart';
+
 class StudentVerification extends StatelessWidget {
   const StudentVerification({super.key});
 
@@ -7,7 +11,7 @@ class StudentVerification extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          AuthBody(),
+          const AuthBody(),
           Padding(
             padding: const EdgeInsets.all(30),
             child: Container(
@@ -57,7 +61,7 @@ class StudentVerification extends StatelessWidget {
                             "Uid",
                             style: Theme.of(context).textTheme.bodyLarge,
                           ),
-                          Text("fggdhg")
+                          const Text("fggdhg")
                         ],
                       )
                     ],

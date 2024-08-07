@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:roomadda/config/string.dart';
+import 'package:roomadda/controller/authController.dart';
+import 'package:roomadda/widgets/primaryBtn.dart';
 
 
 class SignUpPage extends StatelessWidget {
@@ -73,7 +77,7 @@ class SignUpPage extends StatelessWidget {
           const SizedBox(height: 30),
           Obx(
             () => authController.isLoading.value
-                ? CircularProgressIndicator()
+                ? const CircularProgressIndicator()
                 : PrimaryBtn(
                     btnName: "SignUp",
                     icon: Icons.lock_outline,

@@ -3,12 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:roomadda/config/pagePath.dart';
 import 'package:roomadda/firebase_options.dart';
+import 'package:roomadda/widgets/splashScreen.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,)
-
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -20,11 +21,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Room Adda',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        brightness: Brightness.light
-      ),
+      theme: ThemeData(brightness: Brightness.light),
       getPages: pagePath,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const SplashScreen(),
     );
   }
 }

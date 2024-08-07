@@ -1,4 +1,10 @@
 
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:roomadda/config/string.dart';
+import 'package:roomadda/pages/home/widgets/sliderScreen.dart';
+import 'package:roomadda/pages/room/roomPage.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -91,10 +97,10 @@ class _HomePageState extends State<HomePage> {
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       onTap: () {
-        Get.to(RoomPage());
+        Get.to(const RoomPage());
       },
       child: Container(
-        margin: EdgeInsets.all(15),
+        margin: const EdgeInsets.all(15),
         child: Material(
           // margin: const EdgeInsets.all(10),
           borderRadius: BorderRadius.circular(10),

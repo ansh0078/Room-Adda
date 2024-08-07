@@ -1,4 +1,9 @@
 
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:roomadda/pages/auth/widgets/authBody.dart';
+import 'package:roomadda/pages/auth/widgets/login.dart';
+import 'package:roomadda/pages/auth/widgets/signUp.dart';
 
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
@@ -11,8 +16,8 @@ class AuthPage extends StatelessWidget {
         children: [
           Column(
             children: [
-              AuthBody(),
-              Obx(() => isLogin.value ? LoginPage() : SignUpPage()),
+              const AuthBody(),
+              Obx(() => isLogin.value ? const LoginPage() : const SignUpPage()),
               Obx(
                 () => Row(
                   mainAxisAlignment: MainAxisAlignment.center,

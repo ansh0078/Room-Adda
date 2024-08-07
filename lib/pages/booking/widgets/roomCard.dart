@@ -1,4 +1,7 @@
 
+import 'package:flutter/material.dart';
+import 'package:roomadda/config/images.dart';
+
 class RoomCard extends StatelessWidget {
   const RoomCard({super.key});
 
@@ -22,9 +25,9 @@ class RoomCard extends StatelessWidget {
                 width: 100,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  image: DecorationImage(
+                  image: const DecorationImage(
                     fit: BoxFit.cover,
-                    image: AssetImage(AssetsIamge.room),
+                    image: AssetImage(AssetsImage.room),
                   ),
                 ),
               ),

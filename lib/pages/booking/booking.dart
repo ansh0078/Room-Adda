@@ -1,4 +1,7 @@
 
+import 'package:flutter/material.dart';
+import 'package:roomadda/config/string.dart';
+import 'package:roomadda/pages/booking/widgets/roomCard.dart';
 
 class MyBooking extends StatefulWidget {
   const MyBooking({super.key});
@@ -42,10 +45,10 @@ class _MyBookingState extends State<MyBooking> {
                       // ctrl.filterByCategory(ctrl.productCategory[index].name ?? '');
                     },
                     child: Padding(
-                      padding: EdgeInsets.only(left: 20),
+                      padding: const EdgeInsets.only(left: 20),
                       child: Chip(
                         label: Text(bookingName[index]),
-                        padding: EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(10),
                       ),
                     ),
                   );
@@ -55,7 +58,7 @@ class _MyBookingState extends State<MyBooking> {
             child: ListView.builder(
               itemCount: 5,
               itemBuilder: (context, index) {
-                return RoomCard();
+                return const RoomCard();
               },
             ),
           ),

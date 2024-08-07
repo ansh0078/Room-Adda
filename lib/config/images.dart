@@ -1,4 +1,4 @@
-class AssetsIamge {
+class AssetsImage {
   static const iconsPath = "assets/icons";
   static const imagesPath = "assets/image";
 
