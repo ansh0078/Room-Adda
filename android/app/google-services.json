@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "506338783311",
+    "project_id": "room-adda-327c9",
+    "storage_bucket": "room-adda-327c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506338783311:android:965d15cedb650b97e97a3a",
+        "android_client_info": {
+          "package_name": "com.example.roomadda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJcrRAhBeYSoMKol3SyiZQlsInA5d5Yxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
